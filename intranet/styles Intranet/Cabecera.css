@@ -1,0 +1,208 @@
+
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: #687176;
+    font-family: 'Open Sans',Arial,sans-serif;
+    width: 1200px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35) ;
+};
+    .headerPrincipal{
+        display: flex;
+    }
+        .headerTop{
+            background-color: #000000;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .headerCenter{
+            width: 100%;
+            height: 180px;
+            display: flex;
+
+        }   .headerCenter img{
+                opacity: 0.6;
+            }
+            .headerCenter p{
+              position: absolute;
+              margin-top: 20px;
+              margin-left: 50px;
+            }
+
+        .nav-menu-opciones{
+            width: 100%;
+            height:50px;
+            display: flex;
+            background-color: #F1D092;
+        }
+        .nav-menu-opciones a{
+            color: black;
+            width:20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-menu-opciones a:hover{
+            background-color:white;
+            color: #687176;
+            text-decoration: none;
+        }
+        
+/*-----------footer-----------*/
+footer{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: rgb(0, 0, 0);
+}
+    .footer-Top{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .footer-imagen{
+            width: 220px;
+        }
+
+
+    .footer-bottom{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+        .footer-redesSociales{
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased; 
+            display: flex;
+            justify-content:center;
+            margin: 5px 5px 5px 5px;
+            text-decoration: none;
+        }
+        .footer-redesSociales a img{
+            width: 20px;
+            height: 20px;
+            margin-bottom: 4px;   
+        }
+            .footer-redesSociales-circulo{
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            width: 42px;
+            height: 42px;
+            text-decoration: none;
+            padding: 17px 18px 14px 18px;
+            transition: 0.2s;
+            transition-timing-function: ease-in-out;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .footer-redesSociales-circulo:hover{
+                border: 1px solid white;
+            }
+
+/*Responsive de Tablet*/
+
+@media screen and (max-width: 991.98px) {
+
+    footer{
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+    .footer-bottom{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-bottom div ul{
+      padding: 0;
+    }
+  }
+
+/*Responsive de Celular*/
+@media screen and (max-width: 576px) {
+    
+    body{
+        background-color: #687176;
+        font-family: 'Open Sans',Arial,sans-serif;
+        width: 100%;
+    }
+    .headerPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+    .headerTop{
+        background-color: #000000;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+
+    }
+        .dropdown{
+            display: none;
+        }
+    .headerCenter{
+        display: none;
+    }   
+    .nav-menu-opciones{
+        background-color: #F1D092;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .nav-menu-opciones a{
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            
+        }
+        .nav-menu-opciones a:hover{
+            background-color:white;
+            color: #687176;
+
+        }
+    
+        footer{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+        }
+            .footer-Top{
+                display: none;
+            }
+            .footer-bottom{
+                justify-content:center;
+                width: 100%;
+            }
+            .footer-bottom div ul{
+                display: none;
+            }
+
+}          
+

@@ -1,0 +1,193 @@
+:focus {outline:none}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+p {
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 18px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image: url(../img/GRACIAS.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.testbox {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 500px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.testbox h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+input[type=radio] {
+  visibility: hidden;
+}
+
+form{
+  margin: 0 30px;
+}
+
+label.radio {
+  cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+label.radio:before {
+  background: #D784F7;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+label.radio:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 0.5em;
+  height: 0.25em;
+  background: transparent;
+  top: 7.5px;
+  left: 4.5px;
+  border: 3px solid #ffffff;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + label:after {
+  opacity: 1;
+}
+
+hr{
+  color: white;
+  opacity: 0.5;
+}
+
+.accounttype{
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.testbox .user-box {
+  position: relative;
+}
+
+.testbox .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.testbox .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.testbox .user-box input:focus ~ label,
+.testbox .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #4CE0F4;
+  font-size: 12px;
+}
+
+.testbox form a{
+  color: white;
+  text-decoration: none;
+}
+
+.testbox form button {
+    border: none;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.testbox button:hover {
+  background: #D784F7;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #D784F7,
+              0 0 23px #D784F7,
+              0 0 48px #D784F7,
+              0 0 98px #D784F7;
+}
+@media screen and (max-width: 991.98px) {
+  body{background: none;
+  background-color: #5B7898 }
+  
+  .testbox{
+      left: 50%;
+      width:80%;
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+body{background: none;
+background-color: #5B7898 }
+  .testbox{
+      left: 50%;
+      width:80%;
+  }
+}

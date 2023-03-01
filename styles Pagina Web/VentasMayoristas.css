@@ -1,0 +1,74 @@
+main{
+
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.form-2{
+    color: grey;
+    justify-content:center;
+    align-items: center;
+}
+.input-contac{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.input-txtarea{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.linea{
+    background-color: #0000004d;
+    width: 1px;
+}
+/*----Contacto-----*/
+.contenedor-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 991.98px) {
+        main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .text-main p{
+            margin: 5px 25px 5px 25px;;
+        }
+    .form-main{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .text-main p{
+            margin: 5px 25px 5px 25px;;
+        }
+    .form-main{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}   

@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-around;
+}
+@media screen and (max-width: 991.98px) {
+
+    main{  display: flex;
+        flex-direction:column;
+        text-align:initial;
+        justify-content: center;
+        margin: 20px 20px 20px 20px;}
+    .mision{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .bg-nosotros{
+        display: flex;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+main{  display: flex;
+    flex-direction:column;
+    text-align:initial;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+
+}
+.mision{
+    display: flex;
+    flex-direction: column;
+}
+.bg-nosotros{
+    display: flex;
+    width: 100%;
+}
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link href="styles Intranet/Cabecera.css" rel="stylesheet" type="text/css"/>
+    <link href="styles Intranet/Cuenta.css" rel="stylesheet" type="text/css"/>
+    <script src="js/Cuenta.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script></head> 
+<body class="cuerpo-completo">
+    <header class="headerPrincipal">
+            <div class="headerTop">
+                <a href="../Pagina Web/Portada.html"><img src="img/icons-intranet/logo2.png" alt="" style="width: 100px"/></a>
+                
+                <div class="dropdown">
+                    <button class="btn btn-outline-light m-2 dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="img/icons-intranet/usuario.png" alt=""/> Pefil de usuario
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Geraldine</a>
+                      <a class="dropdown-item" href="../Pagina Web/Portada.html"><img src="img/icons-intranet/cerrar-sesion.png" alt=""/> Salir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="headerCenter">
+                <img src="img/icons-intranet/portada-intranet.jpeg" width="100%" alt="" />
+                <p >Hola Geraldine Albitrez<br/>
+                Bienvenido, aca podras ver todo lo relacionado a tu cuenta
+                </p>
+            </div>
+            <nav class="nav-menu-opciones">
+            
+                    <a href="Pedido.html"><img src="img/icons-intranet/bolsa-de-la-compra.png" alt=""/>&nbsp Pedido</a>
+                
+                    <a href="Favoritos.html"><img src="img/icons-intranet/estrella.png" alt=""/>&nbsp Favoritos</a>
+                
+                    <a href="Cuenta.html"><img src="img/icons-intranet/perfil.png"  alt=""/>&nbsp Cuenta</a>
+                
+                    <a href="Ayuda en Linea.html"><img src="img/icons-intranet/ayuda-en-linea.png" alt=""/>&nbsp Ayuda en linea</a>
+                
+                    <a href="Formulario de Reclamos.html"><img src="img/icons-intranet/libro-de-reclamaciones.png" alt=""/>&nbsp Reclamaciones</a>
+            </nav>
+        </header>
+    <main>
+        <div class="contenedor">
+            <section class="container-personal">
+                <div class="titulo">
+                    <div class="numero">1</div><span>Informacion Personal</span>
+                </div>
+                <form class="form-personal" action="" name="FormaCuenta1">
+                    <div class="personal-nombre">
+                        <label for="firstname">Nombres</label>
+                        <span id="error_nombre"></span>
+                        <input type="text" name="nombre" placeholder="e.g. Richard" id="firstname" required/>
+                    </div>
+                    <div class="personal-apellido">
+                        <label for="firstname">Apellidos</label>
+                        <span id="error_apellido"></span>
+                        <input type="text" name="apellido" placeholder="e.g. Bovell" id="firstname" required/>
+                    </div>
+                    <div class="personal-email">
+                        <label for="firstname">E-mail</label>
+                        <span id="error_gmail"></span>
+                        <input type="email" name="gmail" placeholder="e.g_rb@gmail.com" id="firstname" required/>
+                    </div>
+                </form>
+                
+            </section>
+            <section class="container-direccion">
+                <div class="titulo">
+                    <div class="numero">2</div><span>Dirección</span>
+                </div>
+                <form class="form-direccion" action="" name="FormaCuenta2">
+                   
+                        <div class="contenedor-formDireccion">
+                            <div>
+                                <div class="izq-1">
+                                    <label for="country">País</label>
+                                    <span id="error_pais"></span>
+                                    <input  name="pais" placeholder="e.g. Perú" id="country" type="text" required/>
+                                </div>
+                                <div class="iz-2">
+                                    <label for="address-two">Distrito</label>
+                                    <span id="error_distrito"></span>
+                                    <input name="distrito" placeholder="Pueblo Libre" id="address-two" type="text" required/>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="der-1">
+                                    <label for="state">Provincia / Region /Ciudad</label>
+                                    <span id="error_region"></span>
+                                    <input  name="region" placeholder="e.g. Lima" id="state" type="text" required/>
+                                </div>
+                                <div class="der-2">
+                                    <label for="address-one">Direccion</label>
+                                    <span id="error_direccion"></span>
+                                    <input name="direccion" placeholder="Jr./Av./Calle" id="address-one" type="text" required/>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </form>
+            </section>
+            <section class="container-metodo-pago">
+                <div class="titulo">
+                    <div class="numero">3</div><span>Método de pago</span>
+                </div>
+                <form class="form-pagos" action="" name="FormaCuenta3">
+                    <div class="met-pago">
+                        <select class="metodo-pago" name="metodo" required>
+                            <option disabled selected value>---Seleccione metodo de pago---</option>
+                            <option @click="addmetpagoefect = !addmetpagoefect"> Débito</option> 
+                            <option @click="addmetpagotarj = !addmetpagotarj"> Crédito</option>
+                        </select>
+                    </div>
+                    <div class="pagos-der">
+                            <div class="c-1">
+                                <label for="address-one">Número de tarjeta </label>
+                                <span id="error_tarjeta"></span>
+                                <input name="tarjeta" placeholder="XXXX XXXX XXXX XXXX" id="address-one" type="text" size="17" maxlength="16" required/>
+                            </div>
+                            <div class="c-2">
+                                <div>
+                                    <label for="address-three">CVV</label>
+                                    <span id="error_cvv"></span>
+                                    <input name="cvv" placeholder="XXX" id="address-three" type="password" size="4" maxlength="3" required/>
+                                </div>
+                                <div>
+                                    <label for="address-two">Fecha de Caducidad</label>
+                                    <span id="error_afiliado"></span>
+                                    <input name="afiliado" placeholder="01/07" id="address-two" type="month" size="5" maxlength="4" required/>
+                                </div>
+                                
+                            </div>
+                    </div>  
+                    </form>
+            </section>
+            <section class="form-buttom">
+                        <button type="button" value="enviar" onclick="ValidarFormaCuenta()">Editar Información</button>       
+            </section> 
+        </div>
+    </main>
+    <footer>
+        <div class="footer-Top">
+            <img class="footer-imagen" src="img/icons-intranet/logo2.png" alt="" width="100" height="80"/>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <div>
+                <ul>
+                    <h5><b>CONTACTO</b></h5>
+                        <img src="img/icons-intranet/localizacion.png"/><a>&nbsp</a>Av.San borja Sur 3324 - San Borja<br/>
+                        <img src="img/icons-intranet/llamada-telefonica.png"/><a>&nbsp</a>01 4562872<br/>
+                        <img src="img/icons-intranet/telefono-inteligente.png"/><a>&nbsp</a>987654321<br/>
+                        <img src="img/icons-intranet/correo-electronico.png"/><a>&nbsp</a>viñatintos@gmail.com<br/>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5><b>POLITICAS</b></h5>
+                        Políticas de Privacidad<br/>
+                        Términos y condiciones<br/>
+                        Preguntas Frecuentes<br/>
+                        Libro de reclamaciones<br/>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-redesSociales">
+                    <a class="footer-redesSociales-circulo" href="https://www.facebook.com/profile.php?id=100086588221629&is_tour_dismissed=true" target="_blank">
+                        <img src="img/icons-intranet/facebook.png" alt="" />
+                    </a>
+                    <a>&nbsp</a>
+                    <a class="footer-redesSociales-circulo" href="https://www.instagram.com/vina_tintos/" target="_blank">
+                        <img src="img/icons-intranet/instagram.png" alt="" />
+                    </a>
+                    <a>&nbsp</a>
+                    <a class="footer-redesSociales-circulo" href="https://www.linkedin.com/in/vi%C3%B1a-tintos-533579252/" target="_blank">
+                        <img src="img/icons-intranet/linkedin.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,145 @@
+.nav-menu-opciones a:nth-child(2){
+    background: white;
+}
+.wrapper h1{
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;    
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height:800px ;
+    padding: 20px;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: white;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.content:hover{
+    transform: scale(1.02);
+    transition: all .6s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+.box img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.content{
+    padding: 20px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin: 5px 5px 5px 5px;
+}
+
+.content h3{
+    margin-bottom: 5px;
+}
+
+.content h4{
+    margin-bottom: 2px;
+}
+
+.btn-area{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: blue;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-area:hover{
+    background-color: aqua;
+    color: white;
+}
+
+.unit input{
+    width: 50px;
+    padding: 4px;
+    text-align: center;
+}
+
+.btn-area i{
+    margin-right: 5px;
+}
+
+
+
+.right-bar hr{
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .wrapper {
+        display: flex;} 
+    .box{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        background: white;
+        overflow-y: scroll;
+        scroll-behavior: smooth;}
+    .content:hover{
+        transform: scale(1.02);
+        transition: all .6s ease;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;}
+    
+    .box img{
+        object-fit: cover;}
+    
+    .content{
+        position: relative;
+        width:90%;
+        height: auto;}
+    
+    .content h3{
+        font-size:small;}
+    .content h4{
+        font-size:small;}
+    
+    .btn-area{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding: 2px 5px;
+        background-color: blue;
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 10px;}
+    
+    .btn-area:hover{
+        background-color: aqua;
+        color: white;}
+    .unit{
+        font-size: small;}
+    .unit input{
+        margin-left: 10px;
+        width: 40px;}
+   
+    
+    .btn-area i{
+        margin-right: 5px;
+    }
+    
+    .btn2{
+        font-size: 15px;
+    }
+
+}

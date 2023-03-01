@@ -1,0 +1,15 @@
+.nav-menu-opciones a:nth-child(4){
+    background: white;
+}
+
+main{
+
+padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        
+        padding: 20px;
+        }
+}
